@@ -1,0 +1,23 @@
+.new-tweet {
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 2em;
+  /*width: 400px;*/
+  /*margin: auto;*/
+  padding: 15px;
+}
+
+.new-tweet #compose-tweet {
+  /*font-size: 2em;*/
+  border-bottom: 1px solid black;
+  margin-top: 0px;
+}
+
+.new-tweet #text-box {
+  width: 100%;
+}
+
+.new-tweet .counter {
+  float: right;
+}
