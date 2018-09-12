@@ -21,3 +21,29 @@
   float: left;
   margin-right: 10px;
 }
+
+.compose-button {
+  opacity: 0.75;
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  float: right;
+  margin-right: 70px;
+  margin-top: 10px;
+  border: solid black 1px;
+  color: #00a087;
+}
+
+
+.compose-button:hover {
+  opacity: 1;
+  color: black;
+}
+
+#tweet-error {
+  color: red;
+  font-style: italic;
+  display: none;
+  font-size: .8em;
+
+}
