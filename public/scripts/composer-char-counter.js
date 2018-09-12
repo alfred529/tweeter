@@ -1,7 +1,7 @@
 // Makes sure the DOM is ready to be manipulated with JQuery
-$( document ).ready(function() {
-    console.log( "Document loaded, ready for JQuery manipulation" );
-});
+// $( document ).ready(function() {
+//     console.log( "Document loaded, ready for JQuery manipulation" );
+// });
 
 
 $(document).ready(function() {

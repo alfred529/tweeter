@@ -60,18 +60,18 @@ function createTweetElement(tweetData){
   const $tweet = $('<article>').addClass('article-tweet')
   const createdDate = new Date(tweetData.created_at).toLocaleTimeString();
   const header = `<header class="article-tweet-header">
-            <img class="profile-pic" src="${tweetData.user.avatars.small}">
-            <h2 class="article-header-text">${tweetData.user.name}</h2> <p class="user-handle">${tweetData.user.handle}</p>
-            </header>`
+                    <img class="profile-pic" src="${tweetData.user.avatars.small}">
+                    <h2 class="article-header-text">${tweetData.user.name}</h2> <p class="user-handle">${tweetData.user.handle}</p>
+                  </header>`
   const body = `<p class="article-content-text">${tweetData.content.text}</h4>`
-  const footer =`   <footer>
-                      <p class="article-tweet-footer">${createdDate}</p>
-                      <p class="footer-icons">
-                      <i class="fas fa-flag"></i>
-                      <i class="fas fa-retweet"></i>
-                      <i class="fas fa-heart"></i>
-                      </p>
-                    </footer>`
+  const footer = `<footer>
+                    <p class="article-tweet-footer">${createdDate}</p>
+                    <p class="footer-icons">
+                    <i class="fas fa-flag"></i>
+                    <i class="fas fa-retweet"></i>
+                    <i class="fas fa-heart"></i>
+                    </p>
+                  </footer>`
 
   $tweet.append(header);
   $tweet.append(body);
