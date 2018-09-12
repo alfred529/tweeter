@@ -57,8 +57,10 @@ const data = [
 
 
 function createTweetElement(tweetData){
+  // creates a var $tweet, which is an article type, with the class article-tweet
   const $tweet = $('<article>').addClass('article-tweet')
   const createdDate = new Date(tweetData.created_at).toLocaleTimeString();
+  // creates a var header, to be placed in the article using the following HTML
   const header = `<header class="article-tweet-header">
                     <img class="profile-pic" src="${tweetData.user.avatars.small}">
                     <h2 class="article-header-text">${tweetData.user.name}</h2> <p class="user-handle">${tweetData.user.handle}</p>
@@ -72,25 +74,25 @@ function createTweetElement(tweetData){
                     <i class="fas fa-heart"></i>
                     </p>
                   </footer>`
-
+  // appends the header/body/footer to the var $tweet
   $tweet.append(header);
   $tweet.append(body);
   $tweet.append(footer);
-  // console.log($tweet)
-  // console.log("tweet0: " + $tweet[0])
+
   return $tweet;
 }
 
 
 
 function renderTweets(tweetArray) {
+  // takes the array tweetArray, and for each entry (called tweet), appends (add to the end) it to the MAIN (in html) with the id tweets-container
   tweetArray.forEach(function(tweet) {
     $("#tweets-container").append(createTweetElement(tweet));
   });
 }
 
 
-
+//takes the data (currently in this file), when this file is loaded, put it through function renderTweets
 $(document).ready(function() {
   renderTweets(data);
 })
