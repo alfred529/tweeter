@@ -74,12 +74,6 @@ function postTweets() {
   })
 }
 
-// $( "img" )
-//   .error(function() {
-//     $( this ).attr( "src", "replacement.png" );
-//   })
-//   .attr( "src", "missing.png" );
-
 function loadTweets() {
     $(".posted-tweets").empty();   // empties all the loaded tweets before loading the database
     $.ajax('/tweets', { method: 'GET' }).then(function(data) {
@@ -102,9 +96,6 @@ function newTweetToggle() {
         $("#text-box").focus();
     });
 }
-
-
-
 
 
 //takes the data, when this file is loaded, put it through function renderTweets
