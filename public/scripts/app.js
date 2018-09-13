@@ -51,11 +51,11 @@ function postTweets() {
     console.log( escape($(this).serialize()) );
     let $error = $('#tweet-error');
     let $messageLength = $(this).find("textarea").val().length;
-    if ($messageLength < 1) {
+    if (!$messageLength) {
       // window.alert('You need to type something!')
       $error.text("You need to type something!")
       $('#tweet-error').show()
-    } else if ($messageLengthS > 140) {
+    } else if ($messageLength > 140) {
       // window.alert('Your post is too long!')
       $error.text("Your post is too long!")
       $('#tweet-error').show()
