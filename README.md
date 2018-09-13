@@ -6,9 +6,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Screenshot of Tweeter home page"] (https://github.com/alfred529/tweeter/blob/master/docs/tweeter-home.png?raw=true)
+![Screenshot of Tweeter home page](https://raw.githubusercontent.com/alfred529/tweeter/master/docs/tweeter-home.png)
 
-![Screenshot of error due to character length] (https://github.com/alfred529/tweeter/blob/master/docs/tweeter-error.png?raw=true)
+![Screenshot of error due to character length](https://raw.githubusercontent.com/alfred529/tweeter/master/docs/tweeter-error.png)
 
 ## Getting Started
 
