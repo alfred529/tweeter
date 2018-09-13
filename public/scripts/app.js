@@ -66,7 +66,9 @@ function postTweets() {
       })
       $('#tweet-error').hide()
       loadTweets();
-
+      $( 'form' ).each(function() {    // clears the form after submitting
+        this.reset();
+      });
       console.log('Successfully sent to server');
     }
   })
@@ -79,6 +81,7 @@ function postTweets() {
 //   .attr( "src", "missing.png" );
 
 function loadTweets() {
+    $(".posted-tweets").empty();   // empties all the loaded tweets before loading the database
     $.ajax('/tweets', { method: 'GET' }).then(function(data) {
       renderTweets(data);
     })
